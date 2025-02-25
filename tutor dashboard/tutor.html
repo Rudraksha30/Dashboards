@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="tutor.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Tutor Dashboard</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="img/MU logo.jpg" alt="">
+            </div>
+            <span class="logo_name">Tutor Dashboard</span>
+        </div>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                        <i class="uil-user-square"></i>
+                        <span class="link-name">Profile</span></a></li>
+                <li><a href="#">
+                        <i class="uil-setting"></i>
+                        <span class="link-name">Setting</span></a></li>
+                <li><a href="#">
+                        <i class="uil-book"></i>
+                        <span class="link-name">Timetable</span>
+                    </a></li>
+                <li><a href="#">
+                        <i class="uil-pen"></i>
+                        <span class="link-name">Examination</span>
+                    </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="#">
+                        <i class="uil-user-plus"></i>
+                        <span class="link-name">Add Account</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a></li>
+                <li class="mode">
+                    <div class="mode-toggle">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <div class="hor-nav">
+                <a href="#dashboard" style="margin-right: 10px;">Dashboard</a>
+                <a href="#calendar" style="margin-right: 10px;">Calendar</a>
+                <a href="#todo" style="margin-right: 10px;">To-do List</a>
+                <a href="#tutor" style="margin-right: 10px;">Tutor date</a>
+            </div>
+        </div>
+        <div class="dash-content">
+            <div class="overview" id="dashboard">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil-book-reader"></i>
+                        <span class="text">Total Students</span>
+                        <span class="number">1,292</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil-user-times"></i>
+                        <span class="text">No. of Student Pending Fees</span>
+                        <span class="number">673</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil-user"></i>
+                        <span class="text">Total Teachers</span>
+                        <span class="number">25</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cal-todo">
+                <div class="calendar"  id="calendar">
+                    <div class="title">
+                        <i class="uil uil-calendar-alt"></i>
+                        <span class="text">Calendar</span>
+                    </div>
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata"
+                        style="border: 0" width="580" height="450" frameborder="0" scrolling="no"></iframe>
+                </div>
+
+                <div class="todo" id="todo">
+                    <div class="title">
+                        <i class="uil uil-file-check-alt"></i>
+                        <span class="text">To-do List</span>
+                    </div>
+                    <div class="todo-container">
+                        <ul class="todo-list">
+                            <li>
+                                <input type="checkbox" id="task1">
+                                <label for="task1">Complete the Subject</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task2">
+                                <label for="task2">Give Assignment</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task3">
+                                <label for="task3">Class Suprise Test</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task4">
+                                <label for="task4">Before Examination Revision</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task5">
+                                <label for="task5">Check Assignment on Due Date</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="activity" id="tutor">
+                <div class="title">
+                    <i class="uil-user"></i>
+                    <span class="text">Tutor date & Subject</span>
+                </div>
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Prem Shahi</span>
+                        <span class="data-list">Deepa gupta</span>
+                        <span class="data-list">Manisha Chand</span>
+                        <span class="data-list">Pratima Singh</span>
+                        <span class="data-list">Man Shahi</span>
+                        <span class="data-list">Man Shahi</span>
+                        <span class="data-list">Manisha Chand</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Subject</span>
+                        <span class="data-list">Core Java</span>
+                        <span class="data-list">Computer Graphics and Animations</span>
+                        <span class="data-list">Computer Oriented Statistcal Techniques</span>
+                        <span class="data-list">Introduction to Embedded System</span>
+                        <span class="data-list">Software Engineering</span>
+                        <span class="data-list">Software Engineering</span>
+                        <span class="data-list">Computer Oriented Statistcal Techniques</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">date</span>
+                        <span class="data-list">2025-02-24</span>
+                        <span class="data-list">2025-02-24</span>
+                        <span class="data-list">2025-02-24</span>
+                        <span class="data-list">2025-02-24</span>
+                        <span class="data-list">2025-02-25</span>
+                        <span class="data-list">2025-02-25</span>
+                        <span class="data-list">2025-02-25</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Timing</span>
+                        <span class="data-list">7:15-8:15 AM</span>
+                        <span class="data-list">8:15-9:15 AM</span>
+                        <span class="data-list">9:15-10:15 AM</span>
+                        <span class="data-list">10:30-11:15 AM</span>
+                        <span class="data-list">7:15-8:15 AM</span>
+                        <span class="data-list">8:15-9:15 AM</span>
+                        <span class="data-list">9:15-10:15 AM</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Room No.</span>
+                        <span class="data-list">501</span>
+                        <span class="data-list">IT Lab</span>
+                        <span class="data-list">501</span>
+                        <span class="data-list">501</span>
+                        <span class="data-list">IT Lab</span>
+                        <span class="data-list">IT Lab</span>
+                        <span class="data-list">501</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        const body = document.querySelector("body"),
+            sidebar = body.querySelector("nav"),
+            sidebarToggle = body.querySelector(".sidebar-toggle");
+
+        let getStatus = localStorage.getItem("status");
+        if (getStatus && getStatus === "close") {
+            sidebar.classList.add("close");
+        }
+
+
+        sidebarToggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+
+            if (sidebar.classList.contains("close")) {
+                localStorage.setItem("status", "close");
+            } else {
+                localStorage.setItem("status", "open");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

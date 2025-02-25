@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/MU logo.jpg" alt="">
+            <h3><b>Student Dashboard</b></h3>
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" class="active" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>TimeTable</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+                <a href="fees.html">
+                    <span class="material-icons-sharp">receipt</span>
+                    <h3>Fees</h3>
+                </a>
+            </a>
+            <a href="password.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+    </header>
+
+    <main style="margin: 0;">
+        <div class="timetable active" id="timetable">
+            <div>
+                <span id="prevDay">&lt;</span>
+                <h2>Today's Timetable</h2>
+                <span id="nextDay">&gt;</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Room No.</th>
+                        <th>Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:15 AM - 8:15 AM</td>
+                        <td>IT Lab</td>
+                        <td>Itroduction to embedded System.</td>
+                    </tr>
+                    <tr>
+                        <td>8:15 AM - 9:15 AM</td>
+                        <td>501</td>
+                        <td>Core Java</td>
+                    </tr>
+                    <tr>
+                        <td>9:15 AM - 10:15 AM</td>
+                        <td>501</td>
+                        <td>Cost</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+</html>
